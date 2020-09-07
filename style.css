@@ -897,3 +897,146 @@ div.owl-nav .owl-prev:hover, div.owl-nav .owl-next:hover{
   transform: scale(0.9);
   opacity: 0.8;
 }
+.wrapper-tour{
+	display: grid;
+	place-items: center;
+	margin-top: 30px;
+	padding: 0px;
+	background: transparent;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	height: 110vh;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.slider-tour{
+	max-width: 1100px;
+	display: flex;
+}
+.slider-tour .tour-wrapper{
+	margin: 55px auto;
+}
+.slider-tour .tour-wrapper .card-tour{
+	display: inline-block;
+	width: 335px;
+	height: 470px;
+	margin: 0 10px;
+	background: #fff;
+}
+.slider-tour .card-tour .img-tour{
+	height: 200px;
+	width: 100%;
+}
+.slider-tour .card-tour .img-tour img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.slider-tour .card-tour .content-tour{
+	padding: 10px 20px;
+}
+.card-tour .content-tour .title-tour{
+	font-size: 25px;
+	font-weight: 600;
+}
+.card-tour .content-tour .sub-title-tour{
+	font-size: 15px;
+	font-weight: 500;
+	color: #e74c3c;
+	line-height: 20px;
+}
+.card-tour .content-tour p{
+	text-align: justify;
+	margin: 10px 0;
+	letter-spacing: 1px;
+}
+.card-tour .content-tour .btn-tour{
+	display: block;
+	text-align: left;
+	margin: 10px 0;
+}
+.card-tour .content-tour .btn-tour button{
+	background: #1F4068;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 17px;
+	padding: 5px 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s;
+	opacity: 1;
+	transition: 0.3s ease-in-out;
+}
+.card-tour .content-tour .btn-tour button:hover{
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+.tour-wrapper div.owl-nav{
+	color: #1F4068;
+	display: inline-block;
+	font-size: 55px;
+	height: 40px;
+	margin-top: -250px;
+	text-align: center;
+	width: 20px;
+	transition: 0.6s ease-in-out;
+}
+.owl-prev, .owl-next{
+	position: absolute;
+	outline: none;
+	transition: 0.6s ease-in-out;
+}
+.owl-prev{
+	left: -60px;
+	top: 175px;
+}
+.owl-next{
+	right: -55px;
+	top: 175px;
+}
+div.owl-nav .owl-prev:hover, div.owl-nav .owl-next:hover{
+	background: none !important;
+	outline: none !important;
+}
+.tour-title{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	left: -365px;
+	top: 40px;
+	color: black;
+	font-size: 30px;
+	font-weight: 500;
+}
+.wrapper-tour-private{
+	display: grid;
+	place-items: center;
+	padding: 0px;
+	background: transparent;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	height: 110vh;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.private-tour-title{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	left: -370px;
+	top: 40px;
+	color: black;
+	font-size: 30px;
+	font-weight: 500;
+}
+.backpacker-tour-title{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	left: -333px;
+	top: 40px;
+	color: black;
+	font-size: 30px;
+	font-weight: 500;
+}
