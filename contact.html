@@ -4,14 +4,140 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Our Services | Travelplace</title>
+	<title>Contact | Travelplace</title>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="Benzlee-Free-Christmas-Paper-airplane.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-
+    <style type="text/css">
+		body {
+			min-height: 100vh;
+			padding: 0;
+			margin: 0;
+			font-size: 14px; 
+			color: #666;
+			font-family: poppins;
+		}
+		input, textarea { 
+			outline: none;
+		}
+		.contact-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 100px;
+			padding-bottom: 100px;
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+		.form-inner h1 {
+			margin-bottom: 20px;
+			font-weight: 500;
+		}
+		form {
+			position: relative;
+			width: 80%;
+			border-radius: 30px;
+			background: #fff;
+		}
+		.form-left-decoration,
+		.form-right-decoration {
+			content: "";
+			position: absolute;
+			width: 50px;
+			height: 20px;
+			border-radius: 20px;
+			background: #1F4068;
+		}
+		.form-left-decoration {
+			bottom: 60px;
+			left: -30px;
+		}
+		.form-right-decoration {
+			top: 60px;
+			right: -30px;
+		}
+		.form-left-decoration:before,
+		.form-left-decoration:after,
+		.form-right-decoration:before,
+		.form-right-decoration:after {
+			content: "";
+			position: absolute;
+			width: 50px;
+			height: 20px;
+			border-radius: 30px;
+			background: #fff;
+		}
+		.form-left-decoration:before {
+			top: -20px;
+		}
+		.form-left-decoration:after {
+			top: 20px;
+			left: 10px;
+		}
+		.form-right-decoration:before {
+			top: -20px;
+			right: 0;
+		}
+		.form-right-decoration:after {
+			top: 20px;
+			right: 10px;
+		}
+		.circle {
+			position: absolute;
+			bottom: 80px;
+			left: -55px;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #fff;
+		}
+		.form-inner {
+			padding: 80px;
+		}
+		.form-inner input,
+		.form-inner textarea {
+			display: block;
+			width: 100%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-bottom: 15px;
+			border: none;
+			border-radius: 20px;
+			background: #d0dfe8;
+		}
+		.form-inner textarea {
+			resize: none;
+		}
+		button {
+			width: 100%;
+			padding: 10px;
+			margin-top: 20px;
+			margin-left: 17px;
+			border-radius: 20px;
+			border: none;
+			background: #1F4068; 
+			font-size: 16px;
+			font-weight: 400;
+			color: #fff;
+			justify-content: center;
+			transition: 0.4s ease-in-out;
+			transform: scale(0.95);
+		}
+		button:hover {
+			box-shadow: 0 0 18px 0 grey;
+			transform: scale(1);
+		} 
+		@media (min-width: 568px) {
+		form {
+			width: 60%;
+		}
+		}
+    </style>
 </head>
 <body>
 
@@ -36,94 +162,27 @@
 	<section class="bg-our-service">
 		<div class="content-our-service">
 			<div class="title-our-service">
-				<h5>OUR SERVICES</h5>
+				<h5>CONTACT FORM</h5>
 			</div>
 		</div>
 	</section>
 
-	<!-- Services -->
+	<!-- Contact -->
 
-	<section>
-		<div class="service-title">
-			Service We Provide<br>
-			<p>Tenaga kerja kami siap melayani anda dengan nyaman, aman, dan menyenangkan</p>
-		</div>
-		<div class="wrapper-service">
-			
-			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="300">
-				<div class="card-service">
-					<div class="img-service">
-						<img src="https://dolandolen.com/wp-content/uploads/2019/09/malang-cover.jpg">
-						<div class="info-service">
-							<h1>Open Tour</h1>
-							<p>Kami menyediakan open <br>tour packages, bersama rombongan lain</p>
-						</div>
-					</div>
-					<div class="btn-service"><button>Read More</button></div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="600">
-				<div class="card-service">
-					<div class="img-service">
-						<img src="https://wallpaperaccess.com/full/1455411.jpg">
-						<div class="info-service">
-							<h1>Backpacker Packages</h1>
-							<p>Menyediakan tour yang<br>semurah - murahnya.</p>
-						</div>
-					</div>
-					<div class="btn-service"><button>Read More</button></div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="800">
-				<div class="card-service">
-					<div class="img-service">
-						<img src="https://www.oysterworldwide.com/panel/wp-content/uploads/2020/03/Project_SETour_cambodia-1920x1080.jpg">
-						<div class="info-service">
-							<h1>Days Tour</h1>
-							<p>Kami menyediakan tour<br> harian untuk anda.</p>
-						</div>
-					</div>
-					<div class="btn-service"><button>Read More</button></div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="800">
-				<div class="card-service">
-					<div class="img-service">
-						<img src="https://bisniswisata.co.id/wp-content/uploads/2014/10/recepcion-hotel.jpg">
-						<div class="info-service">
-							<h1>Reservasi</h1>
-							<p>Menyediakan pesan tiket <br> apapun agar memudahkan anda pergi travelling.</p>
-						</div>
-					</div>
-					<div class="btn-service"><button>Read More</button></div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="600">
-				<div class="card-service">
-					<div class="img-service">
-						<img src="https://i0.wp.com/rentaldimas.com/wp-content/uploads/2017/11/sewa-hiace-wisata.jpg?fit=1920%2C1080&ssl=1">
-						<div class="info-service">
-							<h1>Sewa Mobil</h1>
-							<p>Kami menyediakan jasa sewa mobil dengan <br>driver handal tentunya.</p>
-						</div>
-					</div>
-					<div class="btn-service"><button>Read More</button></div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="300">
-				<div class="card-service">
-					<div class="img-service">
-						<img src="https://www.familygoers.com/wp-content/uploads/2017/05/candi-borobudur-e1496631216152.jpg">
-						<div class="info-service">
-							<h1>Private Tour</h1>
-							<p>Jalan-jalan hanya bersama keluarga anda, buruan pesan di Traveplace!</p>
-						</div>
-					</div>
-					<div class="btn-service"><button>Read More</button></div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div class="contact-box">
+		<form action="MAILTO:cadenzaputra11@gmail.com" method="post" enctype="text/plain" class="decor">
+	      <div class="form-left-decoration"></div>
+	      <div class="form-right-decoration"></div>
+	      <div class="circle"></div>
+	      <div class="form-inner">
+	        <h1>Contact us</h1>
+	        <input type="text" name="Username" placeholder="Username">
+	        <input type="email" name="Email" placeholder="Email">
+	        <textarea name="Message" placeholder="Message..." rows="5"></textarea>
+	        <button type="submit" value="send">Send</button>
+	      </div>
+	    </form>
+	</div>
 
 	<!-- Footer -->
 
@@ -194,7 +253,7 @@
 			header.classList.toggle("sticky", window.scrollY > 0);
 		})
 		$(document).ready(function(){
-			$(".tp-wrapper").owlCarousel({
+			$(".tour-wrapper").owlCarousel({
 				items:3,
 				loop: true,
 				nav: true,

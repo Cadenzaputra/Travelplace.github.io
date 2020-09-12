@@ -4,14 +4,184 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Tour Packages | Travelplace</title>
+	<title>Custom Tour | Travelplace</title>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="Benzlee-Free-Christmas-Paper-airplane.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-
+    <style type="text/css">
+    	body {
+    		min-height: auto;
+    	}
+    	.footer{
+			position: absolute;
+			background: #1F4068;
+			height: auto;
+			display: block;
+			z-index: 20;
+			top: 2750px;
+			margin: auto;
+			padding: 0;
+			width: 100%;
+		}
+		form, input, select, textarea, p { 
+			padding: 0;
+			margin: 0;
+			outline: none;
+			font-family: poppins;
+			font-size: 14px;
+			color: #666;
+			line-height: 22px;
+		}
+		.banner h1 {
+			position: absolute;
+			margin: 0;
+			line-height: 55px;
+			font-size: 55px;
+			font-weight: 500;
+			color: #fff;
+			z-index: 2;
+		}
+		.testbox {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: inherit;
+			padding-top: 100px;
+			padding-bottom: 100px;
+			padding-right: 150px;
+			padding-left: 150px;
+		}
+		form {
+			width: 100%;
+			padding: 20px;
+			border-radius: 6px;
+			background: #fff;
+			box-shadow: 0 0 30px 0 grey; 
+		}
+		.banner {
+			position: relative;
+			height: 230px;
+			background-image: url("https://www.oysterworldwide.com/panel/wp-content/uploads/2020/03/Project_SETour_cambodia-1920x1080.jpg");  
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.banner::after {
+			content: "";
+			background-color: rgba(0, 0, 0, 0.4); 
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		input, select, textarea {
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+		input {
+			width: calc(100% - 10px);
+			padding: 5px;
+		}
+		select {
+			width: 100%;
+			padding: 7px 0;
+			background: transparent;
+		}
+		textarea {
+			width: calc(100% - 12px);
+			padding: 5px;
+		}
+		.item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+			color: #1F4068;
+		}
+		.item input:hover, .item select:hover, .item textarea:hover {
+			border: 1px solid transparent;
+			box-shadow: 0 0 6px 0 #1F4068;
+			color: #1F4068;
+		}
+		.item {
+			position: relative;
+			margin: 10px 0;
+		}
+		input[type=radio], input[type=checkbox]  {
+			display: none;
+		}
+		label.radio {
+			position: relative;
+			display: inline-block;
+			margin: 5px 20px 15px 0;
+			cursor: pointer;
+		}
+		.question span {
+			margin-left: 30px;
+		}
+		label.radio:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 17px;
+			height: 17px;
+			border-radius: 50%;
+			border: 2px solid #ccc;
+		}
+		input[type=radio]:checked + label:before, label.radio:hover:before {
+			border: 2px solid #1F4068;
+		}
+		label.radio:after {
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 5px;
+			width: 8px;
+			height: 4px;
+			border: 3px solid #1F4068;
+			border-top: none;
+			border-right: none;
+			transform: rotate(-45deg);
+			opacity: 0;
+		}
+		input[type=radio]:checked + label:after {
+			opacity: 1;
+		}
+		.btn-block {
+			margin-top: 10px;
+			text-align: center;
+		}
+		button {
+			width: 150px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px; 
+			background: #1F4068;
+			font-size: 16px;
+			color: #fff;
+			cursor: pointer;
+			transition: 0.3s ease-in-out;
+			transform: scale(0.95);
+		}
+		button:hover {
+			box-shadow: 0 0 18px 0 grey;
+			transform: scale(1);
+		}
+			@media (min-width: 568px) {
+			.name-item, .city-item {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.name-item input, .city-item input {
+			width: calc(50% - 20px);
+		}
+		.city-item select {
+			width: calc(50% - 8px);
+		}
+		}
+    </style>
 </head>
 <body>
 
@@ -43,7 +213,118 @@
 
 	<!-- Custom Tour -->
 
-	
+	<div class="testbox">
+    <form action="/">
+      <div class="banner">
+        <h1>Custom Tour Form</h1>
+      </div>
+      <div class="item">
+        <p>Passenger contact name</p>
+        <div class="name-item">
+          <input type="text" name="firstname" placeholder="First" />
+          <input type="text" name="lastname" placeholder="Last" />
+        </div>
+      </div>
+      <div class="item">
+        <p>Email</p>
+        <input type="email" name="email"/>
+      </div>
+      <div class="item">
+        <p>Phone / WA Number</p>
+        <input type="text" name="phone" placeholder="### ### ####"/>
+      </div>
+      <div class="item">
+        <p>Address</p>
+        <input type="text" name="address" placeholder="Street address" required/>
+        <div class="city-item">
+          <input type="text" name="city" placeholder="City" required/>
+          <input type="text" name="region" placeholder="Region" required/>
+          <input type="text" name="postal" placeholder="Postal / Zip code" required/>
+        </div>
+      </div>
+      <div class="item">
+        <p>Total number of adults</p>
+        <input type="text" name="num-adults"/>
+      </div>
+      <div class="item">
+        <p>Adults' names</p>
+        <textarea rows="5" name="name-adults"></textarea>
+      </div>
+      <div class="item">
+        <p>Total number of children</p>
+        <input type="text" name="num-children"/>
+      </div>
+      <div class="item">
+        <p>Children names and ages</p>
+        <textarea rows="5" name="name-children"></textarea>
+      </div>
+      <div class="item">
+        <p>Type of tour</p>
+        <select required>
+          <option selected>Select Your Tour</option>
+          <option value="Private Tour">Private Tour</option>
+          <option value="Backpacker Tour">Backpacker Tour</option>
+          <option value="Bussines Tour">Bussines Tour</option>
+          <option value="Day Tour">Day Tour</option>
+        </select>
+      </div>
+      <div class="item">
+        <p>Destination</p>
+        <input type="text" name="destination"/>
+      </div>
+      <div class="item">
+        <p>Departure</p>
+        <input type="date" name="departure"/>
+        <p>Discharge</p>
+        <input type="date" name="discharge"/>
+      </div>
+      <div class="question">
+        <p>Type of Accommodation</p>
+        <div class="question-answer">
+          <div>
+            <input type="radio" value="Hotel 3 star" id="radio_1" name="accommodation"/>
+            <label for="radio_1" class="radio"><span>Hotel 3 Star</span></label>
+          </div>
+          <div>
+            <input type="radio" value="Hotel 4 star" id="radio_2" name="accommodation"/>
+            <label for="radio_2" class="radio"><span>Hotel 4 Star</span></label>
+          </div>
+          <div>
+            <input type="radio" value="Hotel 5 star" id="radio_3" name="accommodation"/>
+            <label for="radio_3" class="radio"><span>Hotel 5 Star</span></label>
+          </div>
+          <div>
+            <input type="radio" value="Villa" id="radio_4" name="accommodation"/>
+            <label for="radio_4" class="radio"><span>Villa</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <p>Transportation to and from hotel</p>
+        <div class="question-answer">
+          <div>
+            <input type="radio" value="Yes" id="radio_5" name="transportation"/>
+            <label for="radio_5" class="radio"><span>Yes</span></label>
+          </div>
+          <div>
+            <input type="radio" value="No" id="radio_6" name="transportation"/>
+            <label for="radio_6" class="radio"><span>No</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <p>Estimated budget tour</p>
+        <input type="number" name="amount" placeholder="Rp 0"/>
+      </div>
+	    <div class="item">
+	      <p>Write the trip you want</p>
+	      <textarea rows="8" name="comment trip"></textarea>
+	    </div>
+	    <div class="btn-block">
+	      <button type="submit" value="send">Send</button>
+	    </div>
+    </form>
+    </div>
 
 	<!-- Footer -->
 
@@ -67,14 +348,14 @@
 					Official Email Account<br>
 					<a href="#"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-whatsapp"></i></a>
-					<a href="#"><i class="fas fa-envelope"></i></a>
+					<a href="contact.html"><i class="fas fa-envelope"></i></a>
 				</p>
 			</div>
 
 			<div class="footer-items">
 				<h1>Navigation</h1>
 				<p>
-					The Building House in, JL. MT. Haryono Gg XIB No. 408a, RT.04/RW.03, Malang 65144, Indonesia.
+					The Building House in,<a href="https://www.google.com/maps/place/Masjid+Al-Azizah/@-7.9418718,112.6077232,17z/data=!3m1!4b1!4m5!3m4!1s0x2e78820d3127cc1b:0xaacbe23793ed37e!8m2!3d-7.9418718!4d112.6099119" style="text-decoration: none;" > JL. MT. Haryono Gg XIB No. 408a, RT.04/RW.03, Malang 65144, Indonesia.</a>
 				</p>
 			</div>
 
